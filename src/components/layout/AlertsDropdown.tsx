@@ -21,7 +21,6 @@ export function AlertsDropdown() {
 
   if (alerts.length === 0) return null;
 
-  const unreadCount = alerts.filter(a => !dismissedIds.includes(a.id)).length;
 
   return (
     <DropdownMenu>

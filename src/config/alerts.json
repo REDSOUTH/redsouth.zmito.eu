@@ -1,0 +1,8 @@
+[
+  {
+    "id": "beta-phase-warning",
+    "type": "warning",
+    "title": "We are currently in Beta",
+    "description": "REDSOUTH Studio is currently in testing phase. You may encounter bugs or incomplete features."
+  }
+]

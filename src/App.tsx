@@ -1,7 +1,6 @@
 import { Routes, Route, Navigate } from "react-router-dom";
 import { Layout } from "@/components/layout/Layout";
 import { Home } from "@/pages/Home";
-import { Contact } from "@/pages/Contact";
 import { Auth } from "@/pages/Auth";
 import { Account } from "@/pages/Account";
 import { ResetPassword } from "@/pages/ResetPassword";

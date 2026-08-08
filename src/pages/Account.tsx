@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 import { useAuthStore } from "@/store/useAuthStore";
 import { pb } from "@/lib/pb";
 import { toast } from "sonner";
-import { Camera, User, Lock, Loader2, ShieldCheck, Smartphone, Check, Copy, LogOut, Link, Plus, Trash2, Code2, Gamepad2, MessageSquare, AlertTriangle, Monitor, Globe } from "lucide-react";
+import { Camera, User, Lock, Loader2, ShieldCheck, Smartphone, Check, Copy, LogOut, Link, Plus, Trash2, AlertTriangle, Monitor } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -14,7 +14,6 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogFooter } from "@/components/ui/dialog";
 import { ConfirmDialog } from "@/components/ui/confirm-dialog";
-import { Switch } from "@/components/ui/switch";
 import { InputOTP, InputOTPGroup, InputOTPSlot } from "@/components/ui/input-otp";
 import * as OTPAuth from "otpauth";
 import { QRCodeSVG } from "qrcode.react";
@@ -277,7 +276,7 @@ export function Account() {
 
   const handleChangeEmailRequest = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!newEmail || newEmail === user.email) return;
+    if (!newEmail || newEmail === user!.email) return;
     setIsSendingEmailChange(true);
     try {
       await pb.collection('users').requestEmailChange(newEmail);
@@ -300,7 +299,7 @@ export function Account() {
       onConfirm: async () => {
         setIsLoading2FA(true);
         try {
-          await pb.collection("users").update(user.id, {
+          await pb.collection("users").update(user!.id, {
             totpSecret: "",
             totpEnabled: false
           });
@@ -325,7 +324,7 @@ export function Account() {
         try {
           // fetch all active auth logs
           const logs = await pb.collection("auth_logs").getFullList({
-            filter: `user = "${user.id}"`
+            filter: `user = "${user!.id}"`
           });
           
           // delete them
@@ -379,11 +378,11 @@ export function Account() {
       confirmText: t("account.unlink_btn", "Unlink"),
       onConfirm: async () => {
         try {
-          const authRecord = await pb.collection("users").unlinkExternalAuth(user.id, providerName);
+          await pb.collection("users").unlinkExternalAuth(user!.id, providerName);
           toast.success(t("account.unlink_success", `Successfully unlinked ${providerName}`));
           
           // Update linked state
-          const newAuths = await pb.collection("users").listExternalAuths(user.id);
+          const newAuths = await pb.collection("users").listExternalAuths(user!.id);
           setExternalAuths(newAuths);
         } catch (error: any) {
           toast.error(error.message || t("account.unlink_error", `Error unlinking ${providerName}`));

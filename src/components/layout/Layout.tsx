@@ -1,6 +1,6 @@
 import { Header } from "@/components/layout/Header";
 import { GlobalBanners } from "@/components/layout/GlobalBanners";
-import { Outlet } from "react-router-dom";
+import { Outlet, Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import {
   DropdownMenu,
@@ -36,10 +36,10 @@ export function Layout() {
               © {new Date().getFullYear()} REDSOUTH Studio. {t('footer.rights')}
             </div>
             <div className="flex flex-wrap justify-center md:justify-start gap-4 text-xs text-muted-foreground/80 mt-3">
-              <a href="#" className="hover:text-foreground transition-colors">{t('footer.legal.terms')}</a>
-              <a href="#" className="hover:text-foreground transition-colors">{t('footer.legal.privacy')}</a>
-              <a href="#" className="hover:text-foreground transition-colors">{t('footer.legal.cookies')}</a>
-              <a href="#" className="hover:text-foreground transition-colors">{t('footer.legal.trademarks')}</a>
+              <Link to="/legal/terms" className="hover:text-foreground transition-colors">{t('footer.legal.terms')}</Link>
+              <Link to="/legal/privacy" className="hover:text-foreground transition-colors">{t('footer.legal.privacy')}</Link>
+              <Link to="/legal/cookies" className="hover:text-foreground transition-colors">{t('footer.legal.cookies')}</Link>
+              <Link to="/legal/trademarks" className="hover:text-foreground transition-colors">{t('footer.legal.trademarks')}</Link>
             </div>
           </div>
           

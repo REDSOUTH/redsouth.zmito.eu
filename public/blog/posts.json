@@ -1,0 +1,15 @@
+[
+  {
+    "slug": "welcome-to-redsouth",
+    "date": "2026-08-08",
+    "image": "/blog/images/welcome.png",
+    "title": {
+      "en": "Welcome to REDSOUTH Studio",
+      "es": "Bienvenidos a REDSOUTH Studio"
+    },
+    "excerpt": {
+      "en": "Discover what REDSOUTH Studio is all about and what we are building for gamers and creators.",
+      "es": "Descubre de qué trata REDSOUTH Studio y qué estamos construyendo para jugadores y creadores."
+    }
+  }
+]

@@ -30,8 +30,13 @@ export function Header() {
           <NavigationMenu>
             <NavigationMenuList>
               <NavigationMenuItem>
-                <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
+                <NavigationMenuLink asChild active={location.pathname === "/"} className={navigationMenuTriggerStyle()}>
                   <Link to="/">{t('header.home')}</Link>
+                </NavigationMenuLink>
+              </NavigationMenuItem>
+              <NavigationMenuItem>
+                <NavigationMenuLink asChild active={location.pathname.startsWith("/blog")} className={navigationMenuTriggerStyle()}>
+                  <Link to="/blog">{t('header.blog', 'Blog')}</Link>
                 </NavigationMenuLink>
               </NavigationMenuItem>
               <NavigationMenuItem>

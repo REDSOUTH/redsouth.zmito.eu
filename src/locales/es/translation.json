@@ -1,24 +1,25 @@
 {
   "header": {
     "home": "Inicio",
+    "blog": "Blog",
     "services": "Servicios",
     "contact": "Contacto",
     "account": "Mi cuenta",
     "login": "Iniciar sesión",
     "register": "Registrarse",
     "modpkg": "Sitio web para descargar paquetes de mods para Minecraft rápida y fácilmente. Exporta/importa tu empaquetado o convierte un mrpack a un archivo zip con todos los mods y overrides incluidos.",
-    "onelauncher": "ONE Launcher, el lanzador de Minecraft para servidores multijugador con mods. Instala y mantén actualizadas tus instancias de contenido para jugar en tu servidor de Minecraft favorito.",
-    "studio_desc": "Creando herramientas de alto rendimiento para jugadores y creadores.",
+    "onelauncher": "ONE Launcher, el Launcher de Minecraft para servidores multijugador con mods. Instala siempre y mantén actualizadas las instancias de Contenido para jugar a tu servidor favorito de Minecraft.",
+    "studio_desc": "Creando herramientas, mods y servidores personalizados para jugadores y creadores.",
     "language": "Idioma"
   },
   "hero": {
     "welcome": "Bienvenido a",
-    "description": "Somos un estudio especializado en crear herramientas de alto rendimiento para jugadores y creadores.<br/>Gestiona tus modpacks de Modrinth y CurseForge con <1>MODPKG</1> o eleva tu experiencia con <3>ONE Launcher</3>.",
+    "description": "Somos un estudio especializado en crear herramientas y contenido exclusivo para jugadores y creadores.<br/>Juega en nuestros servidores, gestiona tus modpacks con <1>MODPKG</1> y eleva tu experiencia con <3>ONE Launcher</3>.",
     "learn_more": "Saber Más"
   },
   "services": {
     "title": "Nuestros Servicios",
-    "description": "Descubre las herramientas y plataformas especializadas que hemos creado para revolucionar tu experiencia de juego y administración.",
+    "description": "Descubre las herramientas, servidores y plataformas especializadas que hemos creado para revolucionar tu experiencia de juego y administración.",
     "explore": "Explorar"
   },
   "account": {
@@ -146,5 +147,13 @@
     "reset_password_btn": "Restablecer contraseña",
     "reset_password_success": "Contraseña restablecida con éxito. Ya puedes iniciar sesión.",
     "reset_password_error": "Error al restablecer. El enlace puede haber caducado."
+  },
+  "blog": {
+    "title": "Blog",
+    "desc": "Noticias, actualizaciones y reflexiones del equipo.",
+    "read_more": "Leer más",
+    "back": "Volver a todos los blogs",
+    "not_found": "Artículo no encontrado",
+    "not_found_desc": "El artículo solicitado no pudo ser cargado o no existe."
   }
 }

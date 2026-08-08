@@ -1,6 +1,6 @@
 # REDSOUTH Studio Web
 
-This repository contains the frontend web application for REDSOUTH Studio. It serves as the central hub for user authentication, account management, and integration with REDSOUTH's ecosystem of services (like MODPKG and ONE Launcher).
+This repository contains the frontend web application for REDSOUTH Studio. It serves as the central hub for user authentication, account management, and integration with REDSOUTH's ecosystem of services (like MODPKG, ONE Launcher, and our custom game servers and mods).
 
 ## Tech Stack
 - **Framework:** React + Vite

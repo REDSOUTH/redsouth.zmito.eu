@@ -1,6 +1,7 @@
 {
   "header": {
     "home": "Home",
+    "blog": "Blog",
     "services": "Services",
     "contact": "Contact",
     "account": "My Account",
@@ -8,17 +9,17 @@
     "register": "Register",
     "modpkg": "Website to download mod packages for Minecraft quickly and easily. Export/import your packaging or convert a mrpack to a zip file with all mods and overrides included.",
     "onelauncher": "ONE Launcher, the Minecraft Launcher for modded multiplayer servers. Always install and keep Content instances updated to play your favorite Minecraft server.",
-    "studio_desc": "Crafting high-performance tools for gamers and creators.",
+    "studio_desc": "Crafting high-performance tools, mods, and custom servers for gamers and creators.",
     "language": "Language"
   },
   "hero": {
     "welcome": "Welcome to",
-    "description": "We are a specialized studio crafting high-performance tools for gamers and creators.<br/>Manage your Modrinth and CurseForge modpacks with <1>MODPKG</1> or elevate your gameplay with <3>ONE Launcher</3>.",
+    "description": "We are a specialized studio crafting high-performance tools and exclusive content for gamers and creators.<br/>Play on our custom servers, manage modpacks with <1>MODPKG</1>, and elevate your gameplay with <3>ONE Launcher</3>.",
     "learn_more": "Learn More"
   },
   "services": {
     "title": "Our Services",
-    "description": "Discover the specialized tools and platforms we have built to revolutionize your gaming and management experience.",
+    "description": "Discover the specialized tools, servers, and platforms we have built to revolutionize your gaming and management experience.",
     "explore": "Explore"
   },
   "account": {
@@ -148,5 +149,13 @@
     "totp_modal_desc": "Enter the 6-digit code from your authenticator app to continue.",
     "totp_modal_submit": "Verify",
     "totp_invalid": "Incorrect security code"
+  },
+  "blog": {
+    "title": "Blog",
+    "desc": "News, updates, and thoughts from the team.",
+    "read_more": "Read more",
+    "back": "Back to all blogs",
+    "not_found": "Post not found",
+    "not_found_desc": "The requested blog post could not be loaded or does not exist."
   }
 }

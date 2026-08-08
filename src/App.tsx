@@ -3,6 +3,9 @@ import { Layout } from "@/components/layout/Layout";
 import { Home } from "@/pages/Home";
 import { Auth } from "@/pages/Auth";
 import { Account } from "@/pages/Account";
+import { Legal } from "@/pages/Legal";
+import BlogList from "@/pages/BlogList";
+import BlogPost from "@/pages/BlogPost";
 import { ResetPassword } from "@/pages/ResetPassword";
 import { ConfirmEmailChange } from "@/pages/ConfirmEmailChange";
 import { Toaster } from "@/components/ui/sonner";
@@ -44,6 +47,9 @@ function App() {
       <Routes>
         <Route element={<Layout />}>
           <Route path="/" element={<Home />} />
+          <Route path="/legal/:document" element={<Legal />} />
+          <Route path="/blog" element={<BlogList />} />
+          <Route path="/blog/:slug" element={<BlogPost />} />
           <Route 
             path="/auth/signin" 
             element={

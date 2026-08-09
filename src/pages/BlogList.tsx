@@ -36,7 +36,7 @@ export default function BlogList() {
       .finally(() => setLoading(false));
   }, []);
 
-  const currentLang = i18n.language || "en";
+  const currentLang = (i18n.language || "en").split("-")[0];
 
   return (
     <div className="container mx-auto max-w-5xl py-12 px-4 md:py-20">

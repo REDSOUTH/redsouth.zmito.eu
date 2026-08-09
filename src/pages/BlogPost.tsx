@@ -36,7 +36,7 @@ export default function BlogPost() {
       .catch((err) => console.error("Failed to load blog meta:", err));
 
     // 2. Fetch the markdown content
-    const lang = i18n.language || "en";
+    const lang = (i18n.language || "en").split("-")[0];
     fetch(`/blog/${lang}/${slug}.md`)
       .then((res) => {
         if (!res.ok) throw new Error("Not found");
@@ -100,7 +100,7 @@ export default function BlogPost() {
     );
   }
 
-  const currentLang = i18n.language || "en";
+  const currentLang = (i18n.language || "en").split("-")[0];
 
   return (
     <article className="container max-w-4xl py-12 px-4">

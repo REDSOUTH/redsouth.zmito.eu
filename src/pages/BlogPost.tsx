@@ -45,6 +45,7 @@ export default function BlogPost() {
       .then((text) => {
         setContent(text);
         setError(false);
+        setLoading(false);
       })
       .catch(() => {
         // Fallback to English if the translation doesn't exist
@@ -64,9 +65,6 @@ export default function BlogPost() {
           setError(true);
           setLoading(false);
         }
-      })
-      .finally(() => {
-        if (lang === "en") setLoading(false);
       });
   }, [slug, i18n.language]);
 
